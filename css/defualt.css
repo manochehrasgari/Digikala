@@ -1,0 +1,999 @@
+
+
+.c-sliders{
+    padding-top: 17px;
+}
+
+.c-top_banner{
+    height: 80px;
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.c-top_banner_img{
+    background: url('../img/banner/topbanner.jpg') no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center;
+    background-color: #fbd007;
+}
+
+.c-sliders_row{
+    display: flex;
+}
+
+.c-sliders_right{
+   
+    display: none;
+}
+
+.c-sliders_right-singleimg{
+    width: 100%;
+    height: 408.7px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    margin-bottom: 15.5px;
+}
+
+
+.c-sliders_right-singleimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-sliders_left{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.c-main_slider{
+    height: 239px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    position: relative;
+    margin-bottom: 15.5px;
+}
+
+.c-slider-slide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.c-slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    background: no-repeat 50% 50%;
+    transition: opacity .3s ease-in-out;
+}
+
+.c-slide.fadein{
+    opacity: 1;
+}
+
+.c-slider_dots{
+    left: 50%;
+    height: 15px;
+    display: inline-flex;
+    position: absolute;
+    bottom: 34px;
+    transform: translateX(-50%);
+    align-items: center;
+}
+
+.c-slider_dots-span{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 0 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .3);
+    opacity: .8;
+}
+
+
+.c-slider_dots-span:hover{
+    width: 11px;
+    height: 11px;
+    margin:  0 5.5px;
+}
+
+.c-slider_dots-span.is-active{
+    background-color: #00bfd6;
+    opacity: 1;
+}
+
+
+
+.js-slider_next , .c-slider_prev{
+    position: absolute;
+    width: 61px;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+}
+
+.js-slider_next{
+    left: 0;
+}
+
+.js-slider_next::before{
+    content: "\e00f";
+    left: 20px;
+   
+}
+
+.js-slider_next:hover::before{
+    left: 17px;
+}
+
+.c-slider_prev{
+    right: 0;
+}
+
+.c-slider_prev::before{
+    content: "\e011";
+    right: 20px;
+   
+}
+
+
+.c-slider_prev:hover::before{
+    right: 17px;
+}
+
+
+.js-slider_next::before , .c-slider_prev::before{
+    font-family: "digikala";
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 26px;
+    text-shadow: 0 2px 4px #616161;
+    transform: translateY(-50%);
+    transition: all .3s ease-in-out;
+}
+
+.c-sliders_right-feature{
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+
+.c-sliders_right-feature_items{
+    width: 100%;
+    height: 384px;
+    padding: 25px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.c-sliders_right-feature_items a{
+    flex-basis: 50%;
+}
+
+.c-sliders_right-feature_items a:first-of-type{
+    flex-basis: 100%;
+}
+
+
+.c-sliders_right-feature_item-1{
+
+    background: url(../svg/feature/express.svg) 43% 8px no-repeat;
+    background-size: auto 58px;
+}
+
+
+.c-sliders_right-feature_item-2{
+    
+    background: url(../svg/feature/support.svg) 50% 4px no-repeat;
+    background-size: auto 58px;
+}
+
+
+.c-sliders_right-feature_item-3{
+    
+    background: url(../svg/feature/pay.svg) 50% 0px no-repeat;
+    background-size: auto 58px;
+}
+
+
+.c-sliders_right-feature_item-4{
+    
+    background: url(../svg/feature/return.svg) 50% 4px no-repeat;
+    background-size: auto 58px;
+}
+
+
+.c-sliders_right-feature_item-5{
+    
+    background: url(../svg/feature/guarantee.svg) 54% 6px no-repeat;
+    background-size: auto 58px;
+}
+
+.c-sliders_right-feature_item{
+    background-size: auto 58px;
+    padding-top: 75px;
+    font-size: 10px;
+    color: #606060;
+    text-align: center;
+    line-height: 17px;
+    padding-bottom: 20px;
+    letter-spacing: .2px;
+}
+
+/*discount*/
+
+
+
+.c-sliders_discount
+{
+   min-width: 100%;
+   max-width: 100%;
+   display: flex;
+}
+
+.c-discount_left{
+    flex-basis: 77.5%;
+    max-width: 77.5%;
+    
+}
+
+.c-discount{
+    background-color: #fff;
+    border-radius: 5px;
+    height: 410px;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    overflow: hidden;
+    
+}
+
+
+.c-discount_box{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    
+}
+
+
+.c-discount_container{
+    display: none;
+    animation: fadein .4s;
+    height: 353px;
+    padding: 60px 20px 20px 30px;
+
+}
+
+.c-discount_container.is-active{
+    display: block;
+}
+
+@keyframes fadein 
+{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+.c-discount_product{
+    width: 100%;
+    position: relative;
+}
+
+.c-discount_content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.c-discount_image{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 344px;
+    flex-basis: 43%;
+}
+
+
+.c-discount_image img{
+    max-width: 100%;
+    max-height: 100%;
+   
+}
+
+.c-discount_image img[alt]::after{
+    content: attr(alt);
+    background: #fff url(../img/discount/digikala.png) no-repeat 50%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    text-align: center;
+    color: transparent;
+}
+
+
+
+.c-discount_image-top-bar{
+    width: 223px;
+    height: 46px;
+    position: absolute;
+    top: -60px;
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.c-discount_image-top-bar::before{
+    content: "";
+    background: #ef5661 url(../img/discount/topbar.png) no-repeat 50% 50%;
+    width: 100%;
+    height: 46px;
+    border-radius: 0 0 24px 24px;
+    display: block;
+    background-size: auto 19px;
+}
+
+.c-discount_prop{
+    flex-basis: 50%;
+}
+
+.c-discount_price{
+    display: inline-flex;
+}
+
+
+.c-discount_price.not-active{
+    display: none;
+}
+
+.c-discount_price-primary{
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-discount_price-original{
+    color: #717171;
+    position: relative;
+    line-height: 23px;
+}
+
+.c-discount_price-original > span{
+    vertical-align: middle;
+}
+
+.c-discount_price-original::after{
+    content: "";
+    background-color: #717171;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.c-discount_price-now{
+    color: #ef5661;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 8px;
+    letter-spacing: 1.2px;
+    line-height: 27px;
+}
+
+
+
+.c-discount_price-now > span{
+    letter-spacing: 0;
+    font-size: 16px;
+}
+
+.c-discount_price-discount{
+    color: #fff;
+    justify-content: center;
+    height: 50px;
+    display: flex;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.c-discount_price-discount_content{
+    background-color: #ef5661;
+    width: 115px;
+    height: 38px;
+    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.c-discount_price-finish{
+    border: 2px solid rgba(145, 145, 145, .3);
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 10px;
+    max-width: 350px;
+    line-height: 22px;
+    color: #919191;
+    box-shadow: 0 0 20px 0 rgba(145, 145, 145, .1);
+}
+
+.c-discount_price-finish{
+    display: none;
+}
+
+.c-discount_price-finish.is-active{
+    display: block;
+}
+
+.c-discount-title{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.89;
+    margin: 20px 0 10px;
+    color: #717171;
+}
+
+
+.c-discount_ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.c-discount_ul li{
+    font-size: 13px;
+    padding-right: 17px;
+    margin: 5px 0;
+    line-height: 24px;
+    position: relative;
+}   
+
+
+.c-discount_ul li::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    background-color: #bebebe;
+    right: 0;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.c-discount_counter{
+    padding: 13px 0;
+    border-top: 1px solid rgba(74, 74, 74, .16);
+}
+
+.c-discount_counter.not-active{
+    display: none;
+}
+
+.c-counter{
+    font-size: 34px;
+    font-weight: 700;
+    width: 181px;
+    line-height: 1;
+    direction: ltr;
+    white-space: nowrap;
+    color: #606060;
+}
+
+.c-counter span{
+    display: inline-block;
+    width: 45px;
+    margin: 0 5px;
+    text-align: center;
+    
+    
+}
+
+.c-discount_conter-title{
+    color: #787878;
+    margin-top: 6px;
+    font-weight: 700;
+    line-height: 2.43;
+}
+
+.c-counter.not-active{
+    display: none;
+}
+
+.c-discount_counter-finish .c-discount_price-now{
+    color: #575757;
+}
+
+.c-discount_counter-finish{
+    display: none;
+}
+
+.c-discount_counter-finish.is-active{
+    display: block;
+}
+
+
+.c-discount_aside{
+    min-width: 250px;
+    background-color: rgba(240, 246, 250, .9);
+    position: relative;
+}
+
+.c-discount_aside-ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.c-discount_aside-ul li{
+    cursor: pointer;
+}
+
+.c-discount_aside-a , .c-discount_aside-a::before{
+    transition: all .4s ease-in-out;
+}
+
+.c-discount_aside-a:not(.c-discount_aside-button):not(.is-active):hover{
+    background-color: #ebebeb;
+    
+    transition: background-color .3s ease-in-out;
+}
+
+.c-footer_feature{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.c-footer_feature a{
+    width: 16.3%;
+}
+
+.c-footer_feature_item{
+    font-size: 13px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    line-height: 1.692;
+    text-align: center;
+}
+
+
+
+.c-discount_banner{
+    display: flex;
+   
+}
+
+.c-discount_banner-items{
+    margin-top: 20px;
+}
+
+.c-discount_banner-items:not(:last-of-type){
+    margin-left: 20px;
+   
+}
+
+.c-discount_banner-items img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+.c-top_swiper{
+    display: flex;
+    margin: 15px 0 0;
+}
+
+.c-top_swiper-right{
+    flex-basis: 75%;
+    max-width: 75%;
+    min-width: 400px;
+    padding-left: 20px;
+}
+
+
+.c-swiper{
+    background-color: #fff;
+    padding: 9px 11px 33px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    height: 100%;
+    margin: 20px 0 0;
+}
+
+.c-top_swiper .c-swiper{
+    margin: 0;
+}
+
+.c-swiper_headline{
+    margin:  0 0 6px 33px;
+    display: flex;
+    position: relative;
+}
+
+.c-swiper_headline::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    right: 0;
+    background-color: #dfdfdf;
+    left: 0;
+    bottom: 0;
+}
+
+.c-swiper_headline span{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 5px 8px 0;
+    min-width: 48px;
+    line-height: 31px;
+    position: relative;
+}
+
+.c-swiper_headline span::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    right: 0;
+    background-color: #ef5661;
+    left: -40px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.c-swiper_headline span::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #fff;
+    left: -45px;
+    bottom: 0;
+    z-index: 2;
+    width: 15px;
+}
+
+.c-swiper_content{
+    position: relative;
+}
+
+.c-swiper_container{
+    overflow: hidden;
+    padding-top: 3px;
+}
+
+.c-swiper_box{
+    display: flex;
+    padding: 2px 0;
+    transition: transform .8s ease-in-out;
+}
+
+.c-swiper_slide{
+    
+    flex-shrink: 0;
+    transition: all .2s ease-in-out;
+}
+
+.c-swiper_slide:hover{
+    transform: translateY(-2px);
+}
+
+.c-swiper_url{
+    padding: 5px 15px 35px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+    align-items: center;
+    position: relative;
+    
+}
+
+.c-swiper_url:hover{
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+
+}
+
+.c-swiper_url:hover::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+}
+
+
+
+.c-swiper_img{
+    width: 210px;
+    height: 210px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.c-swiper_img img{
+    max-height: 100%;
+}
+
+
+.c-swiper_img img[alt]::after{
+    position: absolute;
+    content: attr(alt);
+    background: #fff url(../img/discount/digikala.png) no-repeat 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: contain;
+    color: transparent;
+    text-align: center;
+}
+
+.c-swiper_title{
+    margin-top: 14px;
+    font-size: 12px;
+    width: 90%;
+    text-align: center;
+    line-height: 25px;
+}
+
+.c-swiper_price{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.c-swiper_price-value{
+    color: #fb3449;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.c-swiper_price-value span{
+    
+    font-size: 14px;
+    
+}
+
+.c-swiper_btn-next,.c-swiper_btn-prev{
+    position: absolute;
+    background-color: rgba(255, 255, 255, .8);
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: #a8a8a8;
+
+}
+
+.c-swiper_btn-next{
+    left: 10px;
+    margin-left: -25px;
+}
+
+.c-swiper_btn-next::before{
+    content: "\e00f";
+}
+
+
+.c-swiper_btn-prev{
+    right: 10px;
+    margin-right: -58px;
+}
+
+
+.c-swiper_btn-prev::before{
+    content: "\e011";
+}
+
+
+.c-swiper_btn-next::before,.c-swiper_btn-prev::before{
+    font-family: "digikala";
+    font-size: 26px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    line-height: 1;
+    margin: -13px 0 0 -13px;
+   
+}
+
+.c-swiper_btn-next.disable,.c-swiper_btn-prev.disable{
+
+    opacity: .5;
+    cursor: auto;
+}
+
+
+
+.c-top_swiper-left{
+    flex-basis: 25%;
+    max-width: 25%;
+    
+    
+}
+
+.c-single_swiper{
+    background-color: #fff;
+    height: 100%;
+    border-radius: 5px;
+
+   
+}
+
+.c-single_swiper-content{
+    height: 100%;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.03);
+    border: 1px solid rgba(0,191,214,.3);
+    text-align: center;
+
+}
+
+.c-single_swiper-headline{
+    height: 57px;
+    line-height: 56px;
+    font-weight: 500;
+    color: #6e6e6e;
+    margin: 0 13px;
+    position: relative;
+}
+
+.c-single_swiper-headline::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f5f5f5;
+}
+
+.c-single_swiper-headline::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    left: 0;
+    width: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg,#ffd3db,#fb3449) ;
+    transition: all .3s ease-in-out;
+}
+
+.c-single_swiper-headline.is-active::after{
+    animation: headline 5s ease-in-out;
+}
+
+.c-single_swiper-headline.pause::after{
+    animation-play-state: paused;
+}
+
+@keyframes headline{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+.c-single_swiper-container{
+    overflow: hidden;
+    padding-top: 3px;
+    height: calc(100% - 57px);
+}
+
+.c-single_swiper-box{
+    display: flex;
+    transition: transform .3s ease-in-out;
+}
+
+.c-single_swiper-slide{
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.c-single_swiper-img{
+    width: 210px;
+    height: 210px;
+    display: flex;
+    margin:  11px auto 7px;
+    max-width: 100%;
+}
+
+.c-single_swiper-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.c-single_swiper-desc{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 252px);
+}
+
+.c-single_swiper-title{
+    height: 50px;
+    font-weight: 500;
+    color: #4f4f4f;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.c-single_swiper-price del{
+    font-size: 14px;
+    color: #acacac;
+    line-height: 1.375;
+}
+
+.c-single_swiper-price span{
+    color: #fb3449;
+    display: block;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 500;
+    margin-top: 5px;
+}
+
+.c-about_digikala-banner{
+    margin-top: 20px;
+}
+
+.c-swiper_brands .c-swiper_slide{
+    display: flex;
+    height: 135px;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-swiper_brands img{
+    max-width: 70%;
+    max-height: 70%;
+}

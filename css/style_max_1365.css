@@ -1,0 +1,169 @@
+.c-discount_right {
+  display: block;
+  flex-basis: 22.5%;
+  position: relative;
+}
+
+.c-discount_right-singleimg {
+  height: 335px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.c-discount_left {
+  padding-right: 15px;
+}
+
+.c-discount_right-singleimg img {
+  height: 100%;
+  width: 100%;
+}
+
+.c-discount_right-show_more {
+  background-color: #00bfd6;
+  height: 60px;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 15px;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.03);
+  cursor: pointer;
+  letter-spacing: -0.5px;
+}
+
+.c-discount_right-show_more::after {
+  font-family: "digikala";
+  content: "\e010";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%) rotateY(180deg);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c-discount_right-show_more::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  background-color: #fff;
+  opacity: 0.21;
+  height: 90px;
+  right: -40px;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.c-discount_right-show_more:hover::before {
+  width: 900px;
+  height: 900px;
+  top: -500px;
+  right: -200px;
+  transform: unset;
+}
+
+.c-discount_aside {
+  height: 60px;
+  position: relative;
+}
+
+.c-discount_aside-container {
+  position: relative;
+}
+
+.c-discount_aside-ul {
+  display: flex;
+  position: absolute;
+  transition: right 0.3s ease-in-out;
+}
+
+.c-discount_aside-li {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.c-discount_aside-a {
+  padding: 10px 25px;
+  line-height: 22px;
+  border-radius: 5px;
+  display: block;
+}
+
+.c-discount_aside-a.is-active {
+  color: #fff;
+  background-color: #ef5661;
+  border-radius: 5px;
+}
+
+.c-discount_aside-button {
+  display: none;
+}
+
+.c-discount_btn-next,
+.c-discount_btn-prev {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.c-discount_btn-next:hover,
+.c-discount_btn-prev:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.c-discount_btn-next {
+  left: -57px;
+}
+
+.c-discount_btn-next::before,
+.c-discount_btn-prev::before {
+  font-family: "digikala";
+  position: absolute;
+  font-size: 18px;
+}
+
+.c-discount_btn-next::before {
+  content: "\e00f";
+  left: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.c-discount_btn-prev {
+  right: -57px;
+}
+
+.c-discount_btn-prev::before {
+  content: "\e011";
+  right: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.c-feature_main-page {
+  background-color: #fff;
+  width: 100%;
+  padding: 16px 40px;
+  margin-top: 17px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+}
+
+.c-footer_contact li:nth-of-type(2) {
+  padding-left: 10px;
+}
